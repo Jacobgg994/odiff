@@ -1,0 +1,44 @@
+{
+  "name": "playwright-odiff",
+  "version": "4.3.8",
+  "description": "Playwright custom matcher using odiff for screenshot comparison",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "playwright test",
+    "debug": "playwright test --debug"
+  },
+  "keywords": [
+    "playwright",
+    "odiff",
+    "visual-regression",
+    "screenshot",
+    "testing",
+    "image-comparison"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmtrKovalenko/odiff"
+  },
+  "author": "odiff contributors",
+  "license": "MIT",
+  "peerDependencies": {
+    "@playwright/test": "^1.56.0"
+  },
+  "dependencies": {
+    "odiff-bin": "4.3.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}
